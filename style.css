@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body {
+    font-family: "Varela Round", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #79ceff;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0 auto;
+    font-size: 2rem;
+    margin-right: 270px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Destaques */
+#destaques {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+#destaques h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.skin-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skin-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.skin-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.skin-item h3 {
+    margin: 15px 0;
+}
+
+.skin-item p {
+    color: #333;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Seção de Imagem e Texto */
+#imagem-texto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #fffda0;
+}
+
+#imagem-texto .imagem img {
+    max-width: 300px;
+    height: auto;
+}
+
+#imagem-texto .texto {
+    max-width: 400px;
+}
+
+/* Formulário de Cadastro */
+#cadastro {
+    padding: 20px;
+    background-color: #fff;
+}
+
+#cadastro h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #9bff8e;
+    color: #000000;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+
+button[type="submit"]:hover {
+    background-color: #026e02;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    
+    bottom: 0;
+    width: 100%;
+}

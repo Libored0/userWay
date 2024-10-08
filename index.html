@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Skins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <img src="logo1.png" alt="Logo da Loja" class="logo">
+        <h1>Loja de Skins do Brawl Stars</h1>
+        <p>Aperte Ctrl + U</p>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Destaques -->
+    <section id="destaques">
+        <h2>Skins em Destaque</h2>
+        <div class="skin-container">
+            <div class="skin-item">
+                <img src="elprimo.png" alt="Skin 1">
+                <h3>El Primo Bob esponja</h3>
+                <p>Gratis do evento</p>
+                <button>Comprar</button>
+            </div>
+            <div class="skin-item">
+                <img src="jessie.png" alt="Skin 2">
+                <h3>Jessie Sandy</h3>
+                <p>5000 blings</p>
+                <button>Comprar</button>
+            </div>
+            <div class="skin-item">
+                <img src="buzz.png" alt="Skin 3">
+                <h3>Buzz Patrick</h3>
+                <p>5000 blings</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+<br>
+<br>
+    <!-- Seção de Imagem e Texto -->
+    <section id="imagem-texto">
+        <div class="imagem">
+            <img src="bling.png" alt="Imagem de Exemplo">
+        </div>
+        <div class="texto">
+            <h2>Bling</h2>
+            <p> são moedas que podem ser usadas para comprar visuais, reações, alguns ícones de jogador e sprays no catálogo. </p>
+        </div>
+    </section>
+
+    <!-- Formulário de Cadastro -->
+    <section id="cadastro">
+        <h2>Cadastro de Usuário</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Loja de Skins. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script do UserWay -->
+    <script>
+        (function(d){
+            var s = d.createElement('script');
+            s.setAttribute('data-account', 'INSIRA_SEU_CÓDIGO_USERWAY_AQUI');
+            s.setAttribute('src', 'https://cdn.userway.org/widget.js');
+            (d.body || d.head).appendChild(s);
+        })(document);
+
+        // Script para o carrossel
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel-images img');
+        const totalImages = images.length;
+
+        setInterval(() => {
+            images[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % totalImages;
+            images[currentIndex].style.display = 'block';
+        }, 3000); // Troca a cada 3 segundos
+    </script>
+
+</body>
+</html>
